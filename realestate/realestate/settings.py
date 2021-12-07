@@ -75,16 +75,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'realestate.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -162,10 +152,3 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_ALLOW_ALL = True
 
 FILE_UPLOAD_PERMISSIONS=0o640
-
-# AUTH_USER_MODEL = 'accounts.UserAccount'
-
-# try:
-#     from .local_settings import *
-# except ImportError:
-#     pass
