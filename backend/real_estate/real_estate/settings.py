@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'accounts',
     'realtors',
+    'contacts'
 ]
 
 MIDDLEWARE = [
@@ -91,6 +92,13 @@ DATABASES = {
     }
 
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'saikatsingha.test@gmail.com'
+EMAIL_HOST_PASSWORD = 'wgulzplhtwbauqso'
+EMAIL_USE_TLS = True
 
 
 # Password validation
@@ -159,3 +167,10 @@ FILE_UPLOAD_PERMISSIONS=0o640
 
 AUTH_USER_MODEL = 'accounts.UserAccount'
 
+
+# {
+#     "name": "Saikat Singha",
+#     "email": "saikatsingha@gmail.com",
+#     "subject": "Testing Testing",
+#     "message": "I am alive"
+# }
